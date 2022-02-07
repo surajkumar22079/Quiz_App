@@ -1,0 +1,77 @@
+.choices{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(191, 54, 225);
+    background-color: white;
+    border-radius: 8px;
+
+}
+.choices:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 12px 0 rgba(208, 85, 245, 0.5);
+    transform: translateY(-1px);
+    transition: transform 150ms;
+}
+.choice-prefix{
+    padding: 7px 9px;
+    background-color:rgb(159, 54, 200) ;
+    color: white;
+}
+.choice-text{
+    padding: 7px 12px;
+    width: 100%;
+}
+.correct{
+    background-color: rgb(91, 204, 91);
+}
+.incorrect{
+    background-color: rgb(255, 60, 60);
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+.hud-prefix{
+    text-align: center;
+    font-size: 2.4rem;
+}
+.hud-main-text{
+    text-align: center;
+}
+
+#progressBar{
+    margin-top: 20px;
+    height: 4rem;
+    width: 20rem;
+    border: 3px solid #bc56eb;
+}
+
+#progressBarFull{
+    height: 3.4rem;
+    background-color: #bc56eb;
+
+}
+
+
+/* Loader */
+
+#loader{
+    border: 1.5rem solid white;
+    border-radius: 50%;
+    border-top: 1.5rem solid #bc56eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
